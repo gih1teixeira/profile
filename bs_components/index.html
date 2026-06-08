@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giovanna Teixeira | Portfólio</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+    :root {
+        --roxo: #8100d6;
+        --roxo-escuro: #7500c4;
+        --fundo: #f8f5fc;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: var(--fundo);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        background: #000 !important;
+        border-bottom: 3px solid var(--roxo);
+    }
+
+    .navbar-brand {
+        color: var(--roxo) !important;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+    .nav-link {
+        color: white !important;
+        font-weight: 500;
+        transition: .3s;
+    }
+
+    .nav-link:hover {
+        color: var(--roxo) !important;
+    }
+
+    .nav-link.active {
+        color: var(--roxo) !important;
+        font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+        background: linear-gradient(135deg, #8600df, #54008b);
+        color: white;
+        padding: 50px 0;
+    }
+
+    .foto-perfil {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    }
+
+    /* BOTÕES */
+    .btn-roxo {
+        background: var(--roxo);
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+
+    .btn-roxo:hover {
+        background: var(--roxo-escuro);
+        color: white;
+    }
+
+    /* TÍTULOS */
+    .section-title {
+        color: var(--roxo);
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    /* SKILLS */
+    .skill {
+        background: var(--roxo);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+        display: inline-block;
+        margin: 5px;
+        font-weight: 500;
+    }
+
+    /* ACCORDION */
+    .accordion-button {
+        background: white;
+        color: var(--roxo);
+        font-weight: bold;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background: var(--roxo);
+        color: white;
+    }
+
+    .accordion-item {
+        border: none;
+        margin-bottom: 15px;
+        border-radius: 15px !important;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    }
+    .card-sombra {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12),
+                0 -4px 15px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    /* FOOTER */
+    footer {
+        background: #212529;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">Giovanna Teixeira</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+                <h1 class="fw-bold">Giovanna Teixeira</h1>
+                <p class="lead">Estudante de Desenvolvimento de Sistemas</p>
+                <p>HTML • CSS • JavaScript • Python • Flask • MySQL</p>
+            </div>
+
+            <div class="col-lg-4 text-center">
+                <img src="img1.png" class="foto-perfil" alt="Foto Perfil">
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- SOBRE MIM -->
+<section id="sobre" class="py-5">
+
+    <div class="container">
+
+        <h2 class="section-title text-center">Sobre Mim</h2>
+
+        <div class="card-sombra">
+
+            <p class="lead text-center">
+
+                Meu nome é Giovanna Teixeira e sou estudante do curso
+                Técnico em Desenvolvimento de Sistemas pelo SENAI.
+
+                Tenho interesse em desenvolvimento web,
+                banco de dados e programação back-end.
+
+                Atualmente desenvolvo projetos utilizando HTML,
+                CSS, JavaScript, Python, Flask e MySQL,
+                buscando aprimorar meus conhecimentos e experiência
+                na área da tecnologia.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INFORMACOES PROFISSIONAIS -->
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="section-title text-center">
+            Informações Profissionais
+        </h2>
+
+        <div class="accordion" id="accordionPortfolio">
+
+            <!-- EXPERIÊNCIA -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#experiencia">
+                        Experiência Profissional
+                    </button>
+                </h2>
+
+                <div id="experiencia" class="accordion-collapse collapse show" data-bs-parent="#accordionPortfolio">
+
+                    <div class="accordion-body">
+
+                        <p class="lead text-center">
+
+                            Atualmente não possuo experiência profissional formal
+                            na área de tecnologia. Entretanto, venho desenvolvendo
+                            projetos acadêmicos e pessoais que contribuem para o meu
+                            aprendizado e evolução como desenvolvedora.
+
+                        </p>
+
+                        <hr>
+
+                        <h4>Projetos Desenvolvidos</h4>
+
+                        <ul>
+                            <li>Site de filmes com HTML, CSS e JavaScript.</li>
+                            <li>Interface de plataforma de ONGs (TCC).</li>
+                            <li>Projetos acadêmicos com web e banco de dados.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HABILIDADES -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#habilidades">
+                        Habilidades e Certificações
+                    </button>
+                </h2>
+
+                <div id="habilidades" class="accordion-collapse collapse" data-bs-parent="#accordionPortfolio">
+
+                    <div class="accordion-body">
+
+                        <h5>Soft Skills</h5>
+                        <span class="skill">Trabalho em equipe</span>
+                        <span class="skill">Organização</span>
+                        <span class="skill">Comunicação</span>
+                        <span class="skill">Proatividade</span>
+
+                        <hr>
+
+                        <h5>Hard Skills</h5>
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Flask</span>
+                        <span class="skill">MySQL</span>
+
+                        <hr>
+
+                        <h5>Certificados Cursos SENAI EAD</h5>
+
+                        <span class="skill">Excel Básico</span>
+                        <span class="skill">Segurança no Trabalho</span>
+                        <span class="skill">Fundamentos da IA</span>
+                        <span class="skill">Segurança Cibernética</span>
+                        <span class="skill">Descarbonização</span>
+                        <span class="skill">Ética na IA</span>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- CONTATO -->
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="section-title text-center">Contato</h2>
+
+        <div class="card-sombra text-center">
+
+            <h4>Vamos conversar?</h4>
+
+            <p>Estou disponível para oportunidades na área de tecnologia.</p>
+
+            <p><i class="bi bi-envelope-fill"></i> gihapt@gmail.com</p>
+            <p><i class="bi bi-whatsapp"></i> (14) 99158-3374</p>
+            <p><i class="bi bi-geo-alt-fill"></i> Botucatu - SP</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h5>Giovanna Teixeira</h5>
+    <p>Estudante de Desenvolvimento de Sistemas</p>
+    <p>© 2026 Todos os direitos reservados</p>
+
+</footer>
+
+<script src="bootstrap.bundle.js"></script>
+
+</body>
+</html>

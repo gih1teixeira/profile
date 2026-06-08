@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes em Bootstrap</title>
+</head>
+
+<body>
+    <h1 class="text-primary">Componentes em Bootstrap</h1>
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            id="dropPortfolio">Portifólio</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="#">Web Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="#">Desenvolvimento</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Crie 4 itens de menu a mais:
+                 Web Design, Desenvolvimento, Contato e Sobre -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="d-flex me-2">
+            <input class="form-control me-2" type="text" placeholder="Buscar">
+            <button type="button" class="bg-secondary text-light btn">Buscar</button>
+        </form>
+    </nav>
+    <!-- Badges -->
+    <span class="badge rounded-pill bg-success">Java</span>
+    <span class="badge rounded-pill bg-danger">HTML</span>
+    <span class="badge rounded-pill bg-warning text-dark">JavaScript</span>
+    <span class="badge rounded-pill bg-info text-dark">CSS</span>
+    <span class="badge rounded-pill bg-dark">Python</span>
+    <button type="button" class="btn btn-primary"> Notificações <span class="badge bg-danger">5</span></button>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button bg-success text-light" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseOne"
+                aria-expanded="true" 
+                aria-controls="collapseOne">Java</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Java é uma linguagem da programação.</strong>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-danger text-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo">HTML</button>
+    </h2>
+    <div id="collapseTwo"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <strong>HTML é uma linguagem de marcação.</strong>
+        </div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-info text-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree">CSS</button>
+    </h2>
+    <div id="collapseThree"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <strong>CSS é usado para estilização.</strong>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>
